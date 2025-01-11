@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    flex-direction: column;
+}
+
+h1{
+    margin:10px;
+}
+
+.box{
+    background-color: #3498db;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:400px;
+    height:200px;
+    margin:10px;
+    border-radius:20px;
+    box-shadow:2px 4px 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(200%);
+    transition: transform 0.5s ease;
+}
+
+.box:nth-last-of-type(even){
+    transform:translateX(-200%);
+}
+
+.box.show{
+    transform:translateX(0);
+}
+
+.box h2{
+    font-size:45px
+}
