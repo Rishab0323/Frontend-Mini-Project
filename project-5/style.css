@@ -10,6 +10,7 @@ body{
     justify-content: center;
     margin:0;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1{
@@ -29,6 +30,7 @@ h1{
     box-shadow:2px 4px 5px rgba(0, 0, 0, 0.5);
     transform: translateX(200%);
     transition: transform 0.5s ease;
+    
 }
 
 .box:nth-last-of-type(even){
