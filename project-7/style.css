@@ -8,7 +8,7 @@
 
 html,body{
     font-family:'Gilroy',sans-serif;
-    background-color: #f6f7fb;
+    background-color: #dedede;
     height:100%;
     width:100%;
     
@@ -55,7 +55,7 @@ html,body{
     
     font-size: 17px;
     font-weight: 500;
-    color:#9e3a3a
+    color:#0a0a0a
 } 
 
 
@@ -100,4 +100,31 @@ html,body{
     background-color: #dedede;
     grid-column: 3;
     grid-row:1/4;
+    padding:40px;
+    padding-right: 40px;
 }
+
+#right video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+#arrow{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:40px;
+    border-radius:40%;
+    background-color: #ee860f;
+}
+
+#arrow i{
+    font-size:30px;
+    font-weight: 100;
+}
+
