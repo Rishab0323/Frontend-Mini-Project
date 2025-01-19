@@ -47,7 +47,7 @@ body{
 }
 
 .form-control{
-    posotion:relative;
+    position:relative;
     margin:20px 0 40px;
     width:300px;
 }
@@ -77,4 +77,10 @@ body{
 .form-control input:focus,
 .form-control input:valid{
 outline:0;
+}
+
+.form-control label{
+    position:absolute;
+    top:15px;
+    left:0;
 }
