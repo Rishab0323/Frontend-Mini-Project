@@ -84,3 +84,14 @@ outline:0;
     top:15px;
     left:0;
 }
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px ;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color:lightblue;
+}
