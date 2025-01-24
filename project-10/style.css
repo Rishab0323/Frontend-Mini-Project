@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgba(246, 241, 247, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+}
+
+.cotainer{
+    color: purple;
+    display: flex;
+    align-items: center;
+    border: 20px 30px;
+    padding:30px;
+}
