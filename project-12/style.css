@@ -6,6 +6,19 @@
 }
 
 body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+}
+
+
+
+body{
     font-family:'Muli', Courier, monospace;
     background-color: #f6f7fb;
     /* display: flex;
@@ -40,4 +53,5 @@ h1{
 
 .faq.active{
     background-colors : #fff;
+    
 }
