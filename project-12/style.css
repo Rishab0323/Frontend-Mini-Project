@@ -5,18 +5,6 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Courier New', Courier, monospace;
-    background-color: #f6f7fb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
-    overflow:hidden;
-    margin:0;
-}
-
-
 
 body{
     font-family:'Muli', Courier, monospace;
@@ -27,7 +15,7 @@ body{
     height:100vh;
     overflow:hidden;
     margin:0; */
-}
+} 
 
 h1{
     margin :50px 0 30px;
@@ -36,12 +24,14 @@ h1{
 
 .faq-container {
     max-width:600pc;
-    margin: 0 auto
+    margin: 4rem;
+    color: #dedede;
 }
 
 .faq{
     background-color: transparent;
-    border: 1px solid #9fa4a8;
+    color:black;
+    border: 1px solid #030303;
     border-radius : 10px;
     margin: 20px 0;
     padding :30px;
@@ -52,6 +42,6 @@ h1{
 
 
 .faq.active{
-    background-colors : #fff;
+    /* background-color : #4949498d; */
     
 }
