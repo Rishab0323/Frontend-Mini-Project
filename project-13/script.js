@@ -9,7 +9,7 @@ textarea.addEventListener('keyup', (e) =>{
     if(e.key === 'Enter'){
         setTimeout(() =>{
             e.target.value  = ''
-        })
+        },10)
 
         randomSelect()
     }
@@ -44,6 +44,7 @@ function randomSelect(){
         setTimeout(() => {
             unHighlightTag(randomTag)
         }, 100)
+    
     }, 100);
 
     setTimeout(() =>{
@@ -56,10 +57,10 @@ function randomSelect(){
         }, 100)
 
     },times * 100)
-
+}
 
     function pickRandomTag() {
-        const tag = document.querySelectorAll('.tag')
+        const tags = document.querySelectorAll('.tag')
         return tags[Math.floor(Math.random() * tags.length)]
     }
 
@@ -71,4 +72,3 @@ function randomSelect(){
     function unHighlightTag(tag) {
         tag.classList.remove('highLight')
     }
-}
