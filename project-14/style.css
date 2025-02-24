@@ -1,0 +1,17 @@
+@import url('https://fonts.googleleapis.com/css?family=Mulidisplay=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Muli', Courier, monospace;
+    background-color: #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+}
