@@ -31,7 +31,7 @@ body{
     margin-top: 10px;
 }
 
-@media(max-width:580px){
+@media(max-width:680px){
     body{
         flex-direction: column;
     }
