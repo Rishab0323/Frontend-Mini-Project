@@ -8,9 +8,10 @@
 body{
     font-family:'Muli', Courier, monospace;
     background-color: #198ae7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
 
-.main{
-    
-}
