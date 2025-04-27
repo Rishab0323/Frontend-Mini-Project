@@ -1,5 +1,10 @@
 @import url('https://fonts.googleleapis.com/css?family=Monterrat:400,600&display=swap');
 
+:root{
+    --border-color:#144fc6;
+    --fill-color:#6ab3f8;
+}
+
 
 *{
     box-sizing: border-box;
@@ -30,5 +35,61 @@ h3{
     color:black;
     border: 2px solid #000000;
     border-radius: 0 0 40px 40px;
-    height:250px
+    height:250px;
+    width:120px;
+    margin:30px 0;
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.cup.cup-small{
+    height:100px;
+    width:50px;
+    border-radius:0 0 20px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 8px;
+    transition: 0.3s ease;
+}
+
+.cup.cup-small.full{
+    background-color: var(--fill-color);
+    color:#fff;
+}
+
+.cups{
+    display:flex;
+    flex-wrap: wrap;
+    width:280px;
+    align-items: center;
+    justify-content: center;
+}
+
+.remained span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small{
+    font-size: 12px;
+}
+
+.percentage{
+    background-color: var(--fill-color);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 0;
+    transition: 0.3s ease;
+}
+
+.text{
+    text-align: center;
+    margin: 0 0 5px;
 }
