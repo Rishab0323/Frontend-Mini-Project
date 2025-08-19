@@ -14,7 +14,7 @@ html{
 body{
     min-height: 150vh;
     margin: 0;
-    font-size: 1.25 rem;
+    font-size: 1.25rem;
     background-color: var(--body-bg);
     color: white;
     display: grid;
@@ -23,8 +23,35 @@ body{
 }
 
 nav{
-    height: 100%;
+    position: sticky;
     top: 0;
     max-height: 100svh;
     background-color: var(--nav-bg);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    gap: 2rem;
+    padding-block: 2rem;
+    font-size: 2rem;
+}
+
+.nav-list li{
+    background-color: orange;
+    padding: 1rem 2rem;
+    margin-left:2rem;
+    border-radius: 100vw 0 0 100vw;
+}
+
+.nav-list li.active{
+    background-color: #123;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
 }
