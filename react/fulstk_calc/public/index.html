@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function operate(){
+            const a = document.getElementById("first").value;
+            const b = document.getElementById("sec").value;
+            const c = document.getElementById("third").value;
+            fetch("http://localhost:8000/simple?a=" +a +"&b=" +b +"&c=" +c)
+            .then( (res) => {
+                console.log(res);
+
+                res.text()
+                .then((ans) => {
+                    console.log(ans);
+                    document.getElementById("val").innerHTML = ans;
+                })
+            })
+           
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="first num" id="first">
+    <br>
+    <br>
+    <input type="text" placeholder="sec num" id="sec">
+    <br>
+    <br>
+    <input type="text" placeholder="thir num" id="third">
+    <br>
+    <br>
+    <button onclick="operate()">calculate</button>
+    <br>
+    <div id="val"></div>
+    
+</body>
+</html>
