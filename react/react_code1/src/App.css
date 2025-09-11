@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.contact-card{
+  background-color: rgb(105, 105, 233);
+  display: inline-block;
+}
