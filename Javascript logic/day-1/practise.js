@@ -14,3 +14,14 @@ let stringWithSpace = ' ' ;
 console.log(emptyString.length);
 console.log(stringWithSpace.length);
 console.log(stringWithSpace[0]);
+
+//String methods
+
+let name1 = 'Javascript king';
+console.log(name1.toLowerCase());
+console.log(name1.toUpperCase());
+console.log(name1.indexOf('s'));
+
+console.log(name1.slice(0,4));
+console.log(name1.replace('hello',' is webdev king'));
+console.log(name1.repeat(3));
