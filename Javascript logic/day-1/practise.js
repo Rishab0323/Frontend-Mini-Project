@@ -39,5 +39,12 @@ month.shift()
 console.log(month)
 month.unshift('july');
 month.unshift('june');
-month[0].replace('april')
+month[0].replace('april') 
 console.log(month);
+
+let cars = ['audi','bmw','safari','tata'];
+console.log(cars.slice());
+console.log(cars.slice(2));
+console.log(cars.slice(-3))
+console.log(cars.slice(-2,1))
+console.log(cars.slice(2,4))
