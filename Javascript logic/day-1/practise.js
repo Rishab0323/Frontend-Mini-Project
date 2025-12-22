@@ -25,3 +25,19 @@ console.log(name1.indexOf('s'));
 console.log(name1.slice(0,4));
 console.log(name1.replace('hello',' is webdev king'));
 console.log(name1.repeat(3));
+
+let arr = ['audi','bike',12,'hello'];
+// arr.push('ferrari');
+arr.pop();
+arr.shift();
+arr.unshift('dhan')
+console.log(arr);
+
+let month = ['january','july','march','august']
+month.shift()
+month.shift()
+console.log(month)
+month.unshift('july');
+month.unshift('june');
+month[0].replace('april')
+console.log(month);
