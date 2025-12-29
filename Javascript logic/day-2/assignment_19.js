@@ -1,8 +1,8 @@
 let num = 3;
-let arr =[1,4,6,9,5,7];
-for(let i=0;i<arr.length;i++){
-    if(arr[i] > num){
-        num = arr[i];
+let arr1 =[1,4,6,9,5,7];
+for(let i=0;i<arr1.length;i++){
+    if(arr1[i] > num){
+        num = arr1[i];
     }
 }
 console.log(num);
@@ -53,7 +53,32 @@ function count_vowel(str){
 str = 'name'
 console.log(count_vowel(str));
 
-//arrow function
-const mul = (a,b) => {
-    console.log(a*b);
+// arrow function
+let mul = (a,b) => {
+    return a*b;                     //arrow fun return gives valid
 }
+
+let val = mul(2,3);
+console.log(val);
+
+let arr =[3,6,9]
+const avg = (arr) => {
+    let curavg = 0
+    for(let i=0;i<arr.length;i++){
+        curavg += arr[i];
+    }
+    return curavg = curavg/arr.length;    //without return statement it was returning undefined
+}
+
+console.log(avg(arr));
+
+const iseven = (num) =>{
+    if(num %2 == 0){
+        return 'even';
+    }
+    else{
+        return 'not even';
+    }
+}
+
+console.log(iseven(3));
