@@ -82,3 +82,27 @@ const iseven = (num) =>{
 }
 
 console.log(iseven(3));
+
+//guess the output
+let length = 4;
+
+function callback(){
+    console.log(this.length);
+}
+
+const object = {
+    length : 5,
+    method(callback){
+        callback();
+    },
+}
+object.method(callback,1,2);
+
+let nums =[1,2,3,4,5];
+const square = nums.map((num) => num * num)
+console.log(square);
+
+let sum = square.reduce((acc,cur)  => acc + cur,0);
+
+let avg1 = sum / nums.length;
+console.log(avg1);
